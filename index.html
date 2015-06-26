@@ -13,8 +13,10 @@
     <script type="text/javascript">
       var canvas = document.getElementById("game-canvas");
       var ctx = canvas.getContext('2d');
-      var game = new RubiksTiles.Game();
-      game.draw(ctx);
+      var game = new RubiksTiles.Game(ctx);
+      game.draw();
+      game.performRotateMove(game.faces.greenFace, game);
+      console.log("ok ok!");
     </script>
   </body>
 </html>
