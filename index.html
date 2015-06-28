@@ -15,10 +15,10 @@
       var ctx = canvas.getContext('2d');
       var game = new RubiksTiles.Game(ctx);
       game.draw();
-      debugger
       game.performUMove();
+      debugger
+      game.performNegativeXRotate();
       game.performFMove();
-      game.xAxisRotate();
       console.log("ok ok!");
     </script>
   </body>
