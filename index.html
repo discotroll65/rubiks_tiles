@@ -2,14 +2,14 @@
 <html>
   <head>
     <title></title>
-    <script src="lib/cell.js"></script>
-    <script src="lib/face.js"></script>
-    <script src="lib/game.js"></script>
-    <script src="lib/axisRotations.js"></script>
-    <script src="lib/F_Fi_B_BiMoves.js"></script>
-    <script src="lib/Ri_R_L_LiMoves.js"></script>
-    <script src="lib/U_Ui_D_DiMoves.js"></script>
-
+    <script src="lib/javascripts/cell.js"></script>
+    <script src="lib/javascripts/face.js"></script>
+    <script src="lib/javascripts/game.js"></script>
+    <script src="lib/javascripts/axisRotations.js"></script>
+    <script src="lib/javascripts/F_Fi_B_BiMoves.js"></script>
+    <script src="lib/javascripts/Ri_R_L_LiMoves.js"></script>
+    <script src="lib/javascripts/U_Ui_D_DiMoves.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/stylesheets/custom.css">
   </head>
   <body>
     <canvas id="game-canvas" width="800" height="800"></canvas>
@@ -19,7 +19,6 @@
       var game = new RubiksTiles.Game(ctx);
       game.draw();
       game.performRiMove();
-      debugger
       game.performPositiveZRotate();
       game.performFMove();
       console.log("ok ok!");

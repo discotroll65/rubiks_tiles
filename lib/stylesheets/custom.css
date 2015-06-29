@@ -1,0 +1,14 @@
+html, body{
+  height: 100%;
+}
+
+html {
+  background: rgb(16,32,101);
+}
+
+canvas {
+  border: solid red;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+}
