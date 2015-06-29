@@ -21,7 +21,7 @@ canvas {
 
 .canvas-row{
   margin: auto;
-  width: 751px;
+  width: 821px;
 }
 
 
@@ -34,16 +34,13 @@ h1 {
   font-family: Cosmik;
 }
 
-.button {
-  height: 80px;
-}
 .group:after {
   clear: both;
   content: "";
   display: block;
 }
 .buttons-container {
-  width: 700px;
+  width: 916px;
   margin: auto;
 }
 
@@ -54,13 +51,21 @@ h1 {
 }
 .left-controls, .right-controls{
   float: left;
+  margin: 0 17px;
+  position: relative;
+  top: 235px;
 }
 
 .top-controls, .bottom-controls{
-  margin: auto;
+  margin: 15px auto;
+}
+
+.button {
+  height: 80px;
+  margin: 0 5px;
 }
 
 .button-group {
   float: left;
-  margin: 0 8px;
+  margin: 0 16px;
 }
