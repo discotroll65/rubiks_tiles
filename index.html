@@ -13,16 +13,69 @@
   </head>
   <body>
     <h1>Rubik's Tiles</h1>
-    <canvas id="game-canvas" width="625" height="560"></canvas>
-    <script type="text/javascript">
-      var canvas = document.getElementById("game-canvas");
-      var ctx = canvas.getContext('2d');
-      var game = new RubiksTiles.Game(ctx);
-      game.draw();
-      game.performRiMove();
-      game.performPositiveZRotate();
-      game.performFMove();
-      console.log("ok ok!");
-    </script>
+    <div class="controls top-controls">
+
+    </div>
+
+    <div class="canvas-row group">
+
+      <div class="controls left-controls">
+
+      </div>
+
+      <canvas id="game-canvas" width="625" height="560"></canvas>
+      <script type="text/javascript">
+        var canvas = document.getElementById("game-canvas");
+        var ctx = canvas.getContext('2d');
+        var game = new RubiksTiles.Game(ctx);
+        game.draw();
+        game.performRiMove();
+        game.performPositiveZRotate();
+        game.performFMove();
+        console.log("ok ok!");
+      </script>
+
+      <div class="controls right-controls">
+
+      </div>
+    </div>
+
+    <div class="controls bottom-controls">
+
+    </div>
+
+
+    <div class="buttons-container group">
+      <div class="button-group right-group group">
+        <img class="button" src="lib/images/RMove.gif" />
+        <img class="button" src="lib/images/RiMove.gif" />
+      </div>
+
+      <div class="button-group left-group group">
+        <img class="button" src="lib/images/LMove.gif" />
+        <img class="button" src="lib/images/LiMove.gif" />
+      </div>
+
+      <div class="button-group bottom-group group">
+        <img class="button" src="lib/images/BiMove.gif" />
+        <img class="button" src="lib/images/BMove.gif" />
+      </div>
+
+      <div class="button-group down-group group">
+        <img class="button" src="lib/images/DiMove.gif" />
+        <img class="button" src="lib/images/DMove.gif" />
+      </div>
+
+      <div class="button-group front-group group">
+        <img class="button" src="lib/images/FMove.gif" />
+        <img class="button" src="lib/images/FiMove.gif" />
+      </div>
+
+      <div class="button-group up-group group">
+        <img class="button" src="lib/images/UiMove.gif" />
+        <img class="button" src="lib/images/UMove.gif" />
+      </div>
+
+    </div>
   </body>
 </html>
