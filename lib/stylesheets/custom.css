@@ -1,9 +1,15 @@
+
+@font-face {
+  font-family: Cosmik;
+  src: url(../fonts/CosmikOrchestra.ttf);
+}
+
 html, body{
   height: 100%;
 }
 
 html {
-  background: rgb(16,32,101);
+  background: rgb(9,9,9);
 }
 
 canvas {
@@ -11,4 +17,13 @@ canvas {
   border-radius: 3px;
   display: block;
   margin: auto;
+}
+
+h1 {
+  color: red;
+  display: block;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  font-size: 52px;
+  font-family: Cosmik;
 }
