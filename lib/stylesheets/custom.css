@@ -54,7 +54,6 @@ h1 {
   color: red;
   display: block;
   text-align: center;
-  /*margin: 40px auto 40px auto;*/
   font-size: 52px;
   font-family: Cosmik;
 }
@@ -65,7 +64,7 @@ h1 {
   display: block;
 }
 .buttons-container {
-  width: 916px;
+  width: 455px;
   margin: auto;
 }
 
@@ -97,7 +96,7 @@ h1 {
 
 .button {
   height: 80px;
-  margin: 0 5px;
+  margin: 5px 5px;
 }
 
 .button-group {
