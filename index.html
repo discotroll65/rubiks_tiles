@@ -13,11 +13,11 @@
   </head>
   <body>
     <h1>Rubik's Tiles</h1>
-    <img src="lib/images/UpArrow.gif" class="controls top-controls"/>
+    <img class="hvr-glow controls top-controls" src="lib/images/UpArrow.gif"/>
 
     <div class="canvas-row group">
 
-      <img src="lib/images/LeftArrow.gif" class="controls left-controls"/>
+      <img class="hvr-glow controls left-controls" src="lib/images/LeftArrow.gif"/>
 
       <canvas id="game-canvas" width="625" height="560"></canvas>
       <script type="text/javascript">
@@ -25,47 +25,57 @@
         var ctx = canvas.getContext('2d');
         var game = new RubiksTiles.Game(ctx);
         game.draw();
+        debugger
         game.performRiMove();
         game.performPositiveZRotate();
         game.performFMove();
         console.log("ok ok!");
       </script>
 
-      <img src="lib/images/RightArrow.gif" class="controls right-controls"/>
+      <img class="hvr-glow controls right-controls" src="lib/images/RightArrow.gif"/>
     </div>
 
-    <img src="lib/images/DownArrow.gif" class="controls bottom-controls"/>
+    <div class="bottom-control-row group">
+      <img class="hvr-glow controls clockwise-controls"
+        src="lib/images/clockwise.gif"/>
+
+      <img class="hvr-glow controls bottom-controls"
+        src="lib/images/DownArrow.gif"/>
+
+      <img class="hvr-glow controls counterclockwise-controls"
+        src="lib/images/counterclockwise.gif"/>
+    </div>
 
 
     <div class="buttons-container group">
       <div class="button-group right-group group">
-        <img class="button" src="lib/images/RMove.gif" />
-        <img class="button" src="lib/images/RiMove.gif" />
+        <img class="hvr-glow button" src="lib/images/RMove.gif" />
+        <img class="hvr-glow button" src="lib/images/RiMove.gif" />
       </div>
 
       <div class="button-group left-group group">
-        <img class="button" src="lib/images/LMove.gif" />
-        <img class="button" src="lib/images/LiMove.gif" />
+        <img class="hvr-glow button" src="lib/images/LMove.gif" />
+        <img class="hvr-glow button" src="lib/images/LiMove.gif" />
       </div>
 
       <div class="button-group bottom-group group">
-        <img class="button" src="lib/images/BiMove.gif" />
-        <img class="button" src="lib/images/BMove.gif" />
+        <img class="hvr-glow button" src="lib/images/BiMove.gif" />
+        <img class="hvr-glow button" src="lib/images/BMove.gif" />
       </div>
 
       <div class="button-group down-group group">
-        <img class="button" src="lib/images/DiMove.gif" />
-        <img class="button" src="lib/images/DMove.gif" />
+        <img class="hvr-glow button" src="lib/images/DiMove.gif" />
+        <img class="hvr-glow button" src="lib/images/DMove.gif" />
       </div>
 
       <div class="button-group front-group group">
-        <img class="button" src="lib/images/FMove.gif" />
-        <img class="button" src="lib/images/FiMove.gif" />
+        <img class="hvr-glow button" src="lib/images/FMove.gif" />
+        <img class="hvr-glow button" src="lib/images/FiMove.gif" />
       </div>
 
       <div class="button-group up-group group">
-        <img class="button" src="lib/images/UiMove.gif" />
-        <img class="button" src="lib/images/UMove.gif" />
+        <img class="hvr-glow button" src="lib/images/UiMove.gif" />
+        <img class="hvr-glow button" src="lib/images/UMove.gif" />
       </div>
 
     </div>
