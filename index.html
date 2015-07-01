@@ -14,6 +14,11 @@
   </head>
   <body>
     <h1>Rubik's Tiles</h1>
+    <h3> This is a two dimensional Rubik's Cube.
+      <a class="scramble"
+        href="#">Scramble</a> the cube and click the
+         arrows and buttons below to manipulate the cube!
+    <h3>
     <img class="hvr-glow controls top-controls" src="lib/images/UpArrow.gif"/>
 
     <div class="canvas-row group">
@@ -82,47 +87,10 @@
       var canvas = document.getElementById("game-canvas");
       var ctx = canvas.getContext('2d');
       var game = new RubiksTiles.Game(ctx);
+      game.handleClicks();
       game.draw();
       debugger
-      // cube rotations
-      document.getElementsByClassName('top-controls')[0]
-        .onclick = game.performNegativeXRotate.bind(game);
-      document.getElementsByClassName('bottom-controls')[0]
-        .onclick = game.performPositiveXRotate.bind(game);
-      document.getElementsByClassName('right-controls')[0]
-        .onclick = game.performPositiveYRotate.bind(game);
-      document.getElementsByClassName('left-controls')[0]
-        .onclick = game.performNegativeYRotate.bind(game);
-      document.getElementsByClassName('clockwise-controls')[0]
-        .onclick = game.performNegativeZRotate.bind(game);
-      document.getElementsByClassName('counterclockwise-controls')[0]
-        .onclick = game.performPositiveZRotate.bind(game);
-
-      // moves
-      document.getElementsByClassName('R')[0]
-        .onclick = game.performRMove.bind(game);
-      document.getElementsByClassName('Ri')[0]
-        .onclick = game.performRiMove.bind(game);
-      document.getElementsByClassName('L')[0]
-        .onclick = game.performLMove.bind(game);
-      document.getElementsByClassName('Li')[0]
-        .onclick = game.performLiMove.bind(game);
-      document.getElementsByClassName('U')[0]
-        .onclick = game.performUMove.bind(game);
-      document.getElementsByClassName('Ui')[0]
-        .onclick = game.performUiMove.bind(game);
-      document.getElementsByClassName('D')[0]
-        .onclick = game.performDMove.bind(game);
-      document.getElementsByClassName('Di')[0]
-        .onclick = game.performDiMove.bind(game);
-      document.getElementsByClassName('Fi')[0]
-        .onclick = game.performFiMove.bind(game);
-      document.getElementsByClassName('F')[0]
-        .onclick = game.performFMove.bind(game);
-      document.getElementsByClassName('B')[0]
-        .onclick = game.performBMove.bind(game);
-      document.getElementsByClassName('Bi')[0]
-        .onclick = game.performBiMove.bind(game);
+      
     })
   </script>
   </html>

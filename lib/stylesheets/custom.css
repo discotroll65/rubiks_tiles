@@ -9,6 +9,10 @@ html, body{
   margin:0;
 }
 
+a{
+  color: rgb(85,26,139);
+}
+
 .hvr-glow {
   display: inline-block;
   vertical-align: middle;
@@ -58,13 +62,21 @@ h1 {
   font-family: Cosmik;
 }
 
+h3 {
+  color: red;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-family: Cosmik;
+}
+
 .group:after {
   clear: both;
   content: "";
   display: block;
 }
 .buttons-container {
-  width: 455px;
+  width: 475px;
   margin: auto;
 }
 
