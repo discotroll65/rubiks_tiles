@@ -61,6 +61,13 @@ h1 {
   font-size: 52px;
   font-family: Cosmik;
 }
+.scramble{
+  font-family: Cosmik;
+}
+.scramble:hover{
+  cursor: pointer;
+  cursor: hand;
+}
 
 h3 {
   color: red;
